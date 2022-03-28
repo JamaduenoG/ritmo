@@ -3,13 +3,13 @@ import Article from "./Article";
 
 const ArticleList = ({articles}) => {
 
-    const [shoWArticleList, setShoWArticleList] = useState(false);
+    const [shoWArticleList, setShowArticleList] = useState(false);
 
     useEffect(() => {
         const showContent = (content) => {
           return content.length > 0
         }
-        setShoWArticleList(showContent(articles))
+        setShowArticleList(showContent(articles))
       }, [articles])
 
     return (
