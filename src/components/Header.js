@@ -1,6 +1,7 @@
 import Logo from '../assets/icons/ritmo-logo.svg';
 
-const Header = (props) => {
+const Header = ({children}) => {
+
     return (
         <div className='header'>
             <div className='content align-center two-columns'>
@@ -8,7 +9,7 @@ const Header = (props) => {
                     <img className='logo' src={Logo} alt='Ritmo logo' />
                 </div>
                 <div className='right'>
-                    {props.children}
+                    {children}
                 </div>
             </div>
         </div>
