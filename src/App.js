@@ -18,7 +18,6 @@ const App = () => {
   const onChangeFilter = (e) => {
     let value = e.target.value;
     value = value.replace(/-/gi, '')
-    console.log(value);
     setFilter({...filter, [e.target.id]: value});
   }
 
